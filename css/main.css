@@ -1,0 +1,73 @@
+* {
+    Margin:0;
+    padding:0;
+ }
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+}
+/* Estilos Body */
+body {
+    margin:1rem 2rem;
+    padding: 1rem 2rem;
+    line-height: 1.6;
+    background: linear-gradient(rgba(42, 42, 43, 0.75),rgba(42, 42, 43, 0.75)), url(../img/rejas.png) no-repeat center fixed;
+    background-size: cover;
+}
+/* Estilos contenedor */
+.contenedor-index{
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "main"
+    "footer"
+    ;
+}
+/* Estilos Nav */
+.nav{
+    grid-area: nav;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.nav-logo {
+    height: 240px;
+
+}
+nav ul {
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    padding: 8px;
+    margin: 0 16px;
+   
+}
+nav ul li h4 a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+/* Estilos links */
+link {
+    display: none;
+}
+a:link  {
+    color:rgb(233, 239, 245);
+}
+a:visited  {
+    color:rgb(233, 239, 245);
+}
+a:hover {
+    color: red;  
+}
+a:active  {
+    color: rgb(28, 0, 128);
+}
