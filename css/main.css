@@ -14,6 +14,7 @@ body {
     background: linear-gradient(rgba(42, 42, 43, 0.75),rgba(42, 42, 43, 0.75)), url(../img/rejas.png) no-repeat center fixed;
     background-size: cover;
 }
+
 /* Estilos contenedor */
 .contenedor-index{
     display: grid;
@@ -49,7 +50,18 @@ nav ul li{
 nav ul li h3 a{
     text-decoration: none;
 }
-
+.nav-items-left{
+    animation-name: entrada-izquierda;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+.nav-items-right{
+    animation-name: entrada-derecha;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
 
 /* Estilos links */
 link {
@@ -66,6 +78,24 @@ a:hover {
 }
 a:active  {
     color: rgb(28, 0, 128);
+}
+/* Animaciones */
+@keyframes entrada-derecha{
+    0%{
+        transform: translatex(1200px);
+    }
+    100%{
+        transform:translatex(0);
+    }
+    
+}
+@keyframes entrada-izquierda{
+    0%{
+        transform: translatex(-500px);
+    }
+    100%{
+        transform:translatex(0);
+    }
 }
 
 /* Media Queries */
