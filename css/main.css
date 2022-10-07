@@ -8,15 +8,65 @@ html {
 }
 /* Estilos Body */
 body {
-    margin:0.5rem 0.5rem;
     padding: 0.5rem 0.5rem;
     line-height: 1.6;
     background: linear-gradient(rgba(42, 42, 43, 0.75),rgba(42, 42, 43, 0.75)), url(../img/rejas.png) no-repeat center fixed;
     background-size: cover;
 }
+h1{
+    color:rgb(255, 255, 255);
+    animation-name: entrada-izquierda;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    
+}
+p{
+    color: rgb(216, 216, 216);
+}
 
 /* Estilos contenedor */
 .contenedor-index{
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "header-index"
+    "main-index"
+    "footer"
+    ;
+}
+/* Estilos contenedor-noticias */
+.contenedor-noticias{
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "main"
+    "footer"
+    ;
+}
+/* Estilos contenedor-videos */
+.contenedor-videos{
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "main"
+    "footer"
+    ;
+}
+/* Estilos contenedor-bonustrack */
+.contenedor-bonustrack{
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "main"
+    "footer"
+    ;
+}
+/* Estilos contenedor-ustedes */
+.contenedor-ustedes{
     display: grid;
     grid-template-areas: 
     "nav"
@@ -47,8 +97,10 @@ nav ul li{
     margin: 0 16px;
    
 }
-nav ul li h3 a{
+nav ul li h4 a{
     text-decoration: none;
+    font-size: 1.2rem;
+    
 }
 .nav-items-left{
     animation-name: entrada-izquierda;
@@ -61,6 +113,23 @@ nav ul li h3 a{
     animation-duration: 1s;
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
+}
+/* Estilos header */
+.header-index{
+    grid-area: header-index;
+    padding: 1rem 0.5rem;
+}
+.title{
+    padding: 0.5rem 2rem;
+}
+header div p{
+    padding: 2rem 2rem;
+}
+
+/* Estilos Main */
+.main-index{
+    grid-area: main-index;
+    padding: 0 0.5rem;
 }
 
 /* Estilos links */
