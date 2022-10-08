@@ -71,6 +71,16 @@ p{
     "footer footer"
     ;
 }
+.contenedor-bonustrack{
+    display: grid;
+    grid-template-areas: 
+    "nav nav"
+    "header main-bonustrack"
+    "header main-bonustrack"
+    "article article"
+    "footer footer"
+    ;
+}
 /* Estilos nav */
 .nav{
     grid-area: nav;
@@ -191,14 +201,20 @@ main div img:hover {
 
 /* Estilos main-bonustrack */
 .main-bonustrack{
+    grid-area: main-bonustrack;
     margin:1rem 2rem ;
-    min-height: 60vh;
+   
 }
-.img-bonustrack {
+#influencias {
     width: 300px;
     height: 300px;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem 1rem 0;
     display: inline-block ;
+}
+.img-bonustrack{
+    grid-area: article;
+    display: inline-block;
+    padding-left: 2rem;
 }
 .recomendaciones{
     padding: 1rem 0;
