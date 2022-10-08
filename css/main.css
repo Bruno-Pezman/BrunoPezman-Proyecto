@@ -59,7 +59,7 @@ p{
     grid-template-areas: 
     "nav"
     "header"
-    "main"
+    "main-index"
     "footer"
     ;
 }
@@ -132,9 +132,9 @@ main div img:hover {
     transition-timing-function: ease-in-out;
 }
 #fotosdemarce{
-    padding: 1rem 2rem;
-    width: 300px;
-    height: 300px;
+    padding: 1.5rem 1.5rem;
+    width: 350px;
+    height: 350px;
     display: inline-block ;
 }
 
@@ -159,6 +159,7 @@ main div img:hover {
 }
 .shows-section{
     font-size: 1.4rem;
+    padding: 1rem 0;
 }
 .shows{
     display: flex;
@@ -174,14 +175,8 @@ main div img:hover {
 #showenlaboca{
     width: 280px;
     height: 280px;
-    padding: 1rem 0;
+    padding: 1rem 1rem 1rem 0;
     display:inline-block; 
-}
-#showenlaboca2{
-    width: 280px;
-    height: 280px;
-    padding: 1rem 5.5rem;
-    display: inline-block; 
 }
 /* Estilos main-videos */
 .main-videos{
@@ -287,114 +282,3 @@ a:active  {
     }
 }
 
-/* media queries */
-
-@media screen and  (max-width: 768px) {
-
-        /* Estilos body */
-    body {
-        margin: 1rem ;
-        padding: 1rem;
-    }
-        /* Estilos nav */
-    .nav{
-        
-        padding: 2rem 2rem;
-        flex-direction: column;
-        text-align: center;
-       
-        
-    }
-    nav ul li{
-        display: block;
-        padding: 16px;
-        
-    }
-    /* Estilos header */
-    .header{
-        margin-top: 4rem;
-        text-align: center;
-        justify-content: center;
-    }
-        /* Estilos Main */
-    main{
-        padding: 1rem 0;
-        text-align: center;
-        justify-content: center;
-
-    }
-    #fotosdemarce{
-        padding: 1rem;
-        width: 250px;
-        height: 250px;
-        display: inline-block;
-    }
-        /* Estilos main-noticias */
-    .novedades{
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        text-align: center;
-    }
-    .agosto22{
-        text-align: center;
-    }
-    .shows{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    #showensantelmo{
-        width: 280px;
-        height: 280px;
-        padding: 1rem 0;
-        display: inline-block ;
-    }
-    #showenlaboca2{
-        padding: 1rem 0;
-        display: inline-block; 
-    }
-        /* Estilos main-bonustrack */
-    .main-bonustrack{
-        text-align: center;
-        margin:1rem 2rem ;
-        min-height: 60vh;
-    }
-    .img-bonustrack {
-        width: 250px;
-        height: 250px;
-        padding: 1rem 2rem;
-        display: inline-block ;
-    }
-    .recomendaciones{
-       text-align: center;
-    }
-        /* Estilos header-ustedes */
-    .header-ustedes{
-        text-align: center;
-        margin: 0;
-        padding: 8px;
-        align-items: center;
-        justify-content: center;
-     }
-        /* Estilos main-ustedes */
-    .contenedor-ustedes{
-        grid-template-areas: 
-        "nav"
-        "header"
-        "main-ustedes"
-        "footer"
-        ;
-     }
-    .main-ustedes{
-        grid-area: main-ustedes;
-        text-align: left;
-        height: 40vh;
-    }
-    form {
-        display: inline-block;
-        
-    }
-    form div input{
-        font-size: 16px;
-    }
