@@ -210,7 +210,6 @@ main div img:hover {
 .main-ustedes{
     margin:1rem 2rem ;
     grid-area: main-ustedes;
-    height: 60vh;
 }
 form {
     display: inline-block;
