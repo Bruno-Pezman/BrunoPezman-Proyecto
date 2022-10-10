@@ -53,7 +53,7 @@ h4:hover{
 p{
     color: rgb(216, 216, 216);
 }
-/* Estilos contenedor-index */
+/* Estilos contenedor*/
 .contenedor-index{
     display: grid;
     grid-template-areas: 
@@ -63,20 +63,21 @@ p{
     "footer"
     ;
 }
-.contenedor-ustedes{
-    display: grid;
-    grid-template-areas: 
-    "nav nav"
-    "header main-ustedes"
-    "footer footer"
-    ;
-}
+
 .contenedor-bonustrack{
     display: grid;
     grid-template-areas: 
     "nav nav"
     "header-bonustrack main-bonustrack"
     "article article"
+    "footer footer"
+    ;
+}
+.contenedor-ustedes{
+    display: grid;
+    grid-template-areas: 
+    "nav nav"
+    "header main-ustedes"
     "footer footer"
     ;
 }
@@ -148,7 +149,6 @@ main div img:hover {
     transition-property: all; 
     transition-timing-function: ease-in-out;
 }
-
 #fotosdemarce{
     padding: 1.5rem 1.5rem;
     width: 320px;
@@ -206,7 +206,10 @@ main div img:hover {
     align-items: center;
     min-height: 60vh;
 }
-
+iframe{
+    width:560px; 
+    height:315px;
+}
 /* Estilos main-bonustrack */
 .main-bonustrack{
     grid-area: main-bonustrack;
@@ -321,6 +324,10 @@ a:active  {
         padding: 1rem 0;
         flex-wrap: nowrap;
         justify-content: center;
+        
+    }
+    nav ul li{
+        display: block;
     }
     footer{
         text-align: center;
@@ -366,5 +373,80 @@ a:active  {
         
         padding: 1rem 0;
         
+    }
+    iframe{
+        width:300px; 
+        height:245px;
+    }
+
+    /* Estilos contenedor*/
+    .contenedor-bonustrack{
+        display: grid;
+        grid-template-areas: 
+        "nav"
+        "header-bonustrack"
+        "main-bonustrack"
+        "article"
+        "footer"
+        ;
+    }  
+    .contenedor-ustedes{
+        display: grid;
+        grid-template-areas: 
+        "nav"
+        "header" 
+        "main-ustedes"
+        "footer"
+        ;
+    }
+    /* Estilos Header-bonustrack */
+    .header-bonustrack{
+        text-align: center;
+        padding: 1rem 2rem;
+    }
+    /* Estilos main-bonustrack */
+    .main-bonustrack{
+        grid-area: main-bonustrack;
+        margin: auto ;
+    
+    }
+    #influencias {
+        width: 240px;
+        height: 240px; 
+        padding: 1rem 0;
+        display:block ;
+    }
+    #playlist{
+        width: 410px;
+        height: 160px;
+        
+    }
+    article{
+        text-align: center;
+        
+    }
+    .article-bonustrack-item{
+        padding-left: 0;
+        padding-right: 1rem;
+        display: block ;
+
+
+    }
+    /* Estilos header-ustedes */
+    .header-ustedes{
+        margin: 0;
+        padding: 8px;
+        text-align: center;
+    }
+    /* Estilos main-ustedes */
+    .main-ustedes{
+        margin:1rem 2rem ;
+        grid-area: main-ustedes;
+    }
+    form {
+   
+    }
+    form div input{
+        font-size: 16px;
     }
 }
