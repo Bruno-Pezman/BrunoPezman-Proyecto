@@ -84,6 +84,9 @@ p{
 .nav{
     grid-area: nav;
     padding: 1rem 0;
+
+    display: flex;
+    flex-direction: row;
     align-items: center;
 }
 .nav-logo {
@@ -303,3 +306,65 @@ a:active  {
     }
 }
 
+/* Media Queries */
+
+@media screen and (min-width:320px) and (max-width:425px) {
+
+    /* Estilos body */
+    body {
+        margin:1rem;
+        padding: 1rem 0;
+   
+    }
+    /* Estilos nav */
+    .nav{
+        padding: 1rem 0;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    footer{
+        text-align: center;
+    }
+    /* Estilos header */
+    .header{
+        grid-area: header;
+        padding: 1rem 2rem;
+        text-align: center;
+        justify-content: center;
+    }
+    /* Estilos main-noticias */
+    .main-noticias{
+        margin:1rem 1rem ;
+    }
+    .novedades{
+        flex-direction: column-reverse;
+        align-content: center;
+        text-align: center;
+    }
+    .agosto22{
+        padding-top:0rem;
+        padding-left: 0rem;
+       
+    }
+    #lagunas{
+        width: 280px;
+        height: 280px;
+    }
+    .shows-section{
+        
+        text-align: center;
+    }
+    .shows{
+        display: block;
+    }
+    #showensantelmo{
+       
+        padding: 1rem 0;
+        display: inline-block ;
+    }
+    #showenlaboca{
+        
+        padding: 1rem 0;
+        
+    }
+}
