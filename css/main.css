@@ -193,9 +193,10 @@ main div img:hover {
     padding: 2rem 0;
 }
 .shows{
+    padding: 2rem 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+   
     
 }
 .main-noticias-item2{
@@ -338,14 +339,8 @@ a:active  {
 
 /* Media Queries */
 
-@media screen and (min-width:320px) and (max-width:425px) {
+@media screen and (min-width:320px) and (max-width:663px) {
 
-    /* Estilos body */
-    body {
-        margin:1rem;
-        padding: 1rem 0;
-   
-    }
     /* Estilos nav */
     .nav{
         padding: 1rem 0;
@@ -363,6 +358,10 @@ a:active  {
         text-align: center;
         justify-content: center;
     }
+    /* Estilos main */
+    main p{
+        text-align: center;
+    }
     /* Estilos main-noticias */
     .novedades{
         flex-wrap: wrap;
@@ -370,8 +369,20 @@ a:active  {
         align-content: center;
         justify-content: center;
     }
+    .img-novedades{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #lagunas{
+        width: 320px;
+        height: 320px;
+    }
     .agosto22{
         font-size: 1.4rem;
+        text-align: center;
+    }
+    .novedades-p{
         text-align: center;
     }
     .shows{
@@ -382,13 +393,30 @@ a:active  {
         align-content: center;
         
     }
+    .main-noticias-item1{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-noticias-item2{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
     .img-main-noticias-shows{
 
         flex-direction: column;
         align-content: center;
         justify-content: center;
     }
-
+    #showenlaboca{
+        padding: 1rem 0;
+        
+    }
     /* Estilos videos */
     iframe{
         width:300px; 
@@ -423,8 +451,7 @@ a:active  {
     /* Estilos main-bonustrack */
     .main-bonustrack{
         grid-area: main-bonustrack;
-        margin: auto ;
-    
+       
     }
     #playlist{
         width: 410px;
@@ -462,40 +489,35 @@ a:active  {
     }
 }
 
-@media screen and (min-width: 426px) and (max-width: 768px) {
-
-    
-    
-    /* Estilos body */
-    body {
-        margin:1rem;
-        padding: 1rem 0;
-        
-    }
+@media screen and (min-width:664px) and (max-width:1024px) {
     /* Estilos nav */
-    .nav {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+    .nav{
+        flex-direction: column;
         align-items: center;
-        align-content: stretch;
-        justify-content: center;
-
-    }   
-    nav ul li{
-        padding: 4px;
-        margin: 0 2.5px;
-    
     }
-   /* Estilos header */
-    .header{
-        grid-area: header;
-        padding: 1rem 2rem;
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    nav ul li{
+        display: inline-block;
+        padding: 8px;
+        margin: 0 16px;
+    
     }
     /* Estilos Main */
     .main-index{
-        margin:1rem 1rem ;
+        margin:1rem 0;
         
+    }
+    main p{
+        padding-bottom: 1rem;
+        text-align: left;
+    }
+    main div img:hover {
+        transform: scale(1.1);
+        transition-property: all; 
+        transition-timing-function: ease-in-out;
     }
     .fotos-index{
         display: flex;
@@ -508,4 +530,64 @@ a:active  {
         height: 328px;
         display: inline-block ;
     }
+
+    /* Estilos main-noticias */
+
+    .novedades{
+        flex-direction: column-reverse;
+        
+    }
+  
+    .shows{
+    
+        flex-direction: column;
+        
+    }
+
+    /* Estilos contenedor */
+    .contenedor-bonustrack{
+        display: grid;
+        grid-template-areas: 
+        "nav"
+        "header-bonustrack"
+        "main-bonustrack"
+        "article"
+        "footer"
+        ;
+    }
+    /* Estilos main-bonustrack */
+    .main-bonustrack{
+        grid-area: main-bonustrack;
+        margin:1rem 2rem ;
+    
+    }
+    .main-bonustrack-item{
+        justify-content: space-evenly;
+    }
+    
+}
+@media screen and (min-width:1024px) and (max-width:1200px) {
+    
+    /* Estilos main-noticias */
+
+    .novedades{
+        flex-direction: row;
+        
+    }
+    .agosto22{
+        padding: 0 1rem;
+    
+    
+    }
+    .shows{
+    
+        flex-direction: row;
+        
+    }
+    .main-noticias-item2{
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
