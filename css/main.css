@@ -160,8 +160,8 @@ main div img:hover {
 }
 #fotosdemarce{
     padding: 1.5rem 1.5rem;
-    width: 320px;
-    height: 320px;
+    width: 328px;
+    height: 328px;
     display: inline-block ;
 }
 
@@ -176,9 +176,13 @@ main div img:hover {
     justify-content: space-between;
 }
 .agosto22{
-    padding-top: 4rem;
-    padding-left: 2rem;
     font-size: 1.4rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
 }
 #lagunas{
     width: 380px;
@@ -186,22 +190,32 @@ main div img:hover {
 }
 .shows-section{
     font-size: 1.4rem;
-    padding: 1rem 0;
+    padding: 2rem 0;
 }
 .shows{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    
+}
+.main-noticias-item2{
+    display: flex;
+    flex-direction: column;
+}
+.img-main-noticias-shows{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
 }
 #showensantelmo{
-    width: 280px;
-    height: 280px;
+    width: 324px;
+    height: 324px;
     padding: 1rem 0;
     display: inline-block ;
 }
 #showenlaboca{
-    width: 280px;
-    height: 280px;
+    width: 324px;
+    height: 324px;
     padding: 1rem 1rem 1rem 0;
     display:inline-block; 
 }
@@ -225,11 +239,21 @@ iframe{
     margin:1rem 2rem ;
    
 }
+.main-bonustrack-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 #influencias {
-    width: 200px;
-    height: 200px;
-    
+    width: 280px;
+    height: 280px;
+    padding: 1rem;
     display: inline-block ;
+}
+.article-bonustrack{
+    display: flex;
+    flex-direction: column;
+    margin:1rem 2rem ;
 }
 #playlist{
     width: 520px;
@@ -237,14 +261,7 @@ iframe{
     
     display: inline-block ;
 }
-.img-bonustrack{
-    display: inline-block;
-}
-.article-bonustrack-item{
-    padding-left: 2rem;
-    display: inline-block ;
 
-}
 /* Estilos main-ustedes */
 .main-ustedes{
     margin:1rem 2rem ;
@@ -347,40 +364,32 @@ a:active  {
         justify-content: center;
     }
     /* Estilos main-noticias */
-    .main-noticias{
-        margin:1rem 1rem ;
-    }
     .novedades{
+        flex-wrap: wrap;
         flex-direction: column-reverse;
         align-content: center;
-        text-align: center;
+        justify-content: center;
     }
     .agosto22{
-        padding-top:0rem;
-        padding-left: 0rem;
-       
-    }
-    #lagunas{
-        width: 280px;
-        height: 280px;
-    }
-    .shows-section{
-        
+        font-size: 1.4rem;
         text-align: center;
     }
     .shows{
-        display: block;
-    }
-    #showensantelmo{
-       
-        padding: 1rem 0;
-        display: inline-block ;
-    }
-    #showenlaboca{
-        
-        padding: 1rem 0;
+
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
         
     }
+    .img-main-noticias-shows{
+
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    /* Estilos videos */
     iframe{
         width:300px; 
         height:245px;
@@ -416,12 +425,6 @@ a:active  {
         grid-area: main-bonustrack;
         margin: auto ;
     
-    }
-    #influencias {
-        width: 240px;
-        height: 240px; 
-        padding: 1rem 0;
-        display:block ;
     }
     #playlist{
         width: 410px;
@@ -485,8 +488,24 @@ a:active  {
     
     }
    /* Estilos header */
-.header{
-    grid-area: header;
-    padding: 1rem 2rem;
-}
+    .header{
+        grid-area: header;
+        padding: 1rem 2rem;
+    }
+    /* Estilos Main */
+    .main-index{
+        margin:1rem 1rem ;
+        
+    }
+    .fotos-index{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #fotosdemarce{
+        padding: 1.5rem 1.5rem;
+        width: 328px;
+        height: 328px;
+        display: inline-block ;
+    }
 }
