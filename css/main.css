@@ -160,9 +160,7 @@ main div img:hover {
 }
 #fotosdemarce{
     padding: 1.5rem 1.5rem;
-    width: 340px;
-    height: 340px;
-    display: inline-block ;
+   
 }
 
 /* Estilos main-noticias */
@@ -524,13 +522,6 @@ a:active  {
         flex-wrap: wrap;
         justify-content: center;
     }
-    #fotosdemarce{
-        padding: 1.5rem 1.5rem;
-        width: 328px;
-        height: 328px;
-        display: inline-block ;
-    }
-
     /* Estilos main-noticias */
 
     .novedades{
