@@ -188,14 +188,13 @@ main div img:hover {
 }
 .shows-section{
     font-size: 1.4rem;
-    padding: 2rem 0;
+    padding-top: 2rem;
 }
 .shows{
-    padding: 2rem 0;
+    padding: 1rem 0;
     display: flex;
     flex-direction: row;
    
-    
 }
 .main-noticias-item2{
     display: flex;
@@ -259,6 +258,13 @@ iframe{
     height: 200px;
     
     display: inline-block ;
+
+    
+}
+article div img:hover{
+    transform: scale(1.1);
+    transition-property: all; 
+    transition-timing-function: ease-in-out;
 }
 
 /* Estilos main-ustedes */
@@ -284,14 +290,17 @@ footer hr{
 }
 footer div ul{
     padding: 0;
+    text-align: center;
 }
 footer div ul li {
     list-style-type: none;
     display: inline-block;
     
+    
 }
 #copyright{
     font-size: 0.8em;
+    text-align: center;
 }
 div ul li a i:hover{
     transform: scale(1.5);
@@ -480,10 +489,6 @@ a:active  {
     }
     form div input{
         font-size: 16px;
-    }
-    /* Estilos footer */
-    footer{
-        text-align: center;
     }
 }
 
