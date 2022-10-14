@@ -9,7 +9,7 @@ html {
 /* Estilos body */
 body {
     margin:1rem;
-    padding: 1rem 2rem;
+    padding: 1rem 0rem;
     line-height: 1.6;
     background: linear-gradient(rgba(42, 42, 43, 0.75),rgba(42, 42, 43, 0.75)), url(../img/rejas.png) no-repeat center fixed;
     background-size: cover;
