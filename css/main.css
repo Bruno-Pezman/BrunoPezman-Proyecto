@@ -361,7 +361,7 @@ a:active  {
     /* Estilos header */
     .header{
         grid-area: header;
-        padding: 1rem 2rem;
+        
         text-align: center;
         justify-content: center;
     }
@@ -386,6 +386,7 @@ a:active  {
         height: 320px;
     }
     .agosto22{
+        padding-left: 0;
         font-size: 1.4rem;
         text-align: center;
     }
@@ -401,6 +402,7 @@ a:active  {
         
     }
     .main-noticias-item1{
+        
         display: flex;
         flex-direction: column;
         align-content: center;
@@ -412,7 +414,7 @@ a:active  {
         flex-direction: column;
         align-content: center;
         justify-content: center;
-        
+        align-items: center;
     }
     .img-main-noticias-shows{
 
@@ -420,7 +422,13 @@ a:active  {
         align-content: center;
         justify-content: center;
     }
+    #showensantelmo{
+        width:320px;
+        height: 320px;
+    }
     #showenlaboca{
+        width:320px;
+        height: 320px;
         padding: 1rem 0;
         
     }
@@ -534,6 +542,9 @@ a:active  {
         flex-direction: column-reverse;
         
     }
+    .agosto22{
+        padding-left: 0;
+    }
   
     .shows{
     
@@ -575,8 +586,8 @@ a:active  {
         
     }
     .agosto22{
-        padding: 0 1rem;
-    
+        padding: 0 ;
+        
     
     }
     .shows{
